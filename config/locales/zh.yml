@@ -63,7 +63,7 @@ zh:
   submit_create: 创建
   link_create_folder: 创建文件夹
   title_check_uncheck_all_for_zip_download_or_email: 全选/全不选（zip下载或邮件发送）
-  title_check_uncheck_all_for_restore_or_delete: Check/Uncheck all for restore or delete
+  title_check_uncheck_all_for_restore_or_delete: 全选/全不选（恢复或删除）
   link_title: 主题
   link_size: 大小
   link_modified: 修改日期
@@ -129,13 +129,13 @@ zh:
   note_maximum_number_of_files_downloaded: 最大文件下载数量(zip或发送电子邮件方式). 0表示无限制.
   label_file_storage_directory: 文件存储目录
   label_index_database: 索引数据库
-  label_stemming_language: Stemming Language
-  note_possible_values: Possible values
-  note_pass_none_to_disable_stemming: "pass 'none' to disable stemming"
-  label_stem_strategy: Stem strategy
-  option_stem_none: Stem none (default)
-  option_stem_some: Stem some
-  option_stem_all: Stem all
+  label_stemming_language: Stemming语言
+  note_possible_values: 可用值
+  note_pass_none_to_disable_stemming: "输入'none', 可以停用Stemming"
+  label_stem_strategy: Stem矩阵
+  option_stem_none: Stem无 (默认)
+  option_stem_some: Stem部分
+  option_stem_all: Stem全部
   label_stemming_description: This controls how the query parser will apply the stemming algorithm. The default value is STEM_NONE. The possible values are
   note_do_not_stem: "Don't perform any stemming."
   note_stem_some: "Search for stemmed forms of terms except for those which start with a capital letter, or are followed by certain characters, or are used with operators which need positional information. Stemmed terms are prefixed with 'Z'."
@@ -145,8 +145,8 @@ zh:
   heading_uploaded_files: 上传文件
   submit_commit: 提交
   link_documents: 文档
-  permission_view_dmsf_file_revision_accesses: View downloads in Activity stream
-  permission_view_dmsf_file_revisions: View revisions in Activity stream
+  permission_view_dmsf_file_revision_accesses: 在活动流中查看下载文件
+  permission_view_dmsf_file_revisions: 在活动流中查看文件版本
   permission_view_dmsf_folders: 浏览文档
   permission_user_preferences: 用户偏好设定
   permission_view_dmsf_files: 查看文档
@@ -157,7 +157,7 @@ zh:
   permission_file_delete: 删除文档
   label_file: 文件
   field_folder: 件夹
-  error_create_cycle_in_folder_dependency: create cycle in folder dependency
+  error_create_cycle_in_folder_dependency: 不能创建文件夹循环依赖关系
   error_contains_invalid_character: 含有无效字符
   error_file_commit_require_uploaded_file: 文件提交要求上传文件
   warning_some_files_were_not_commited: "某些文件因验证错误未能被提交: %{files}"
@@ -168,8 +168,8 @@ zh:
   title_delete_checked: 删除选中
   title_items: items
   title_filename_for_download: 用于下载或zip归档的文件名
-  label_number_of_folders: Folders
-  label_number_of_documents: Documents
+  label_number_of_folders: 文件夹
+  label_number_of_documents: 文档
   error_file_storage_directory_does_not_exist: 文件存储目录不存在或不能创建
   error_file_can_not_be_created: 文件未能在存储目录中创建
   error_wrong_zip_encoding: 不正确的Zip编码
@@ -180,12 +180,12 @@ zh:
   heading_access_downloads_emails: 存取次数
   heading_access_first: 首次
   heading_access_last: 末次
-  label_dmsf_updated: DMSF updated
-  label_dmsf_downloaded: DMSF document downloaded
+  label_dmsf_updated: 文档管家已更新
+  label_dmsf_downloaded: 文档管家已下载
   title_total_size_of_all_files: 文件夹所有文件总大小
   project_module_dmsf: 文档管家  
-  warning_no_project_to_copy_file_to: No project to copy file to
-  comment_copied_from: "Copied from %{source}"
+  warning_no_project_to_copy_file_to: 无可复制到的目标项目
+  comment_copied_from: "复制自 %{source}"
   notice_file_copied: 文件已复制
   notice_file_moved: 文件已移动
   field_target_project: 目标项目
@@ -193,10 +193,10 @@ zh:
   title_copy_or_move: 复制/移动
   label_dmsf_folder_plural: 文件夹
   comment_moved_from: "移动自 %{source}"
-  error_target_folder_same: Target folder and project are the same as current
+  error_target_folder_same: 目标文件夹或项目与当前相同
   error_file_cannot_be_moved: "文件不能被移动"
   error_file_cannot_be_copied: "文件不能被复制"
-  warning_no_project_to_copy_folder_to: No project to copy folder to
+  warning_no_project_to_copy_folder_to: 无可复制到的目标项目
   title_copy: 复制
   error_folder_cannot_be_copied: "文件夹不能被复制"
   notice_folder_copied: 文件夹已复制
@@ -206,71 +206,71 @@ zh:
   label_maximum_email_filesize: Maximum email attachment size
   header_minimum_filesize: File Error.
   error_minimum_filesize: "The file %{file} is 0 bytes and will not be attached."
-  parent_directory: Parent Directory
+  parent_directory: 上级目录
   note_webdav: "Webdav once enabled can be found at %{protocol}://%{domain}/dmsf/webdav/[project identifier]"
-  label_webdav: Webdav functionality
-  label_dmsf_plural: "Copy documents and folders (%{files} files in %{folders} folders)"
+  label_webdav: Webdav功能
+  label_dmsf_plural: "复制文档 (%{files} 文件 %{folders} 文件夹)"
 
-  warning_folder_already_locked: This folder is already locked
-  notice_folder_locked: The folder was successfully locked
-  warning_folder_not_locked: Unfortunately, the folder could not be locked
-  notice_folder_unlocked: The folder was successfully unlocked
-  error_only_user_that_locked_folder_can_unlock_it: You are not authorised to unlock this folder
-  title_folder_parent_locked: "Parent folder %{name} is locked"  
-  title_unlock_folder: Unlock to allow changes for other members
-  title_lock_folder: Lock to prevent changes for other members
+  warning_folder_already_locked: 此文件夹已锁定
+  notice_folder_locked: 此文件夹锁定成功
+  warning_folder_not_locked: 很不幸，此文件夹不能被锁定
+  notice_folder_unlocked: 此文件夹已成功解锁
+  error_only_user_that_locked_folder_can_unlock_it: 你无权解锁此文件夹
+  title_folder_parent_locked: "上级文件夹 %{name} 被锁定"  
+  title_unlock_folder: 解锁并允许其他成员修改
+  title_lock_folder: 锁定并禁止其他成员修改
 
-  select_option_webdav_readonly: Read-only
-  select_option_webdav_readwrite: Read/Write
-  label_webdav_strategy: Webdav strategy
+  select_option_webdav_readonly: 只读
+  select_option_webdav_readwrite: 读/写
+  label_webdav_strategy: Webdav矩阵
   note_webdav_strategy: Enables the administrator to decide if webdav is a read-only or read-write platform for end users.  
   
-  error_unable_delete_dmsf_workflow: Unable to delete the workflow
-  error_empty_note: "The note can't be empty"
-  error_workflow_assign: An error occured while assigning
-  error_cannot_start_workflow: "Workflow can't be started"
+  error_unable_delete_dmsf_workflow: 不能删除工作流
+  error_empty_note: "注释不能为空"
+  error_workflow_assign: 分配时出现错误
+  error_cannot_start_workflow: "工作流不能启用"
   error_cannot_renumber_steps: "Steps can't be renumbered"
-  label_dmsf_workflow_new: New approval workflow
-  field_label_dmsf_workflow: Approval Workflow
-  field_label_dmsf_workflow_name: Approval workflow name
-  label_dmsf_workflow_plural: Approval workflows
-  label_dmsf_workflow_plural_num: Approval workflows (%{count})
-  label_dmsf_workflow_step: Step
-  label_dmsf_workflow_step_plural: Steps
-  label_dmsf_workflow_approval: Approval
-  label_dmsf_workflow_approval_plural: Approvals
-  label_dmsf: DMSF
-  label_dmsf_wokflow_action_approve: Approve
-  label_dmsf_wokflow_action_reject: Reject
+  label_dmsf_workflow_new: 新工作流
+  field_label_dmsf_workflow: 工作流
+  field_label_dmsf_workflow_name: 工作流名称
+  label_dmsf_workflow_plural: 工作流
+  label_dmsf_workflow_plural_num: 工作流 (%{count})
+  label_dmsf_workflow_step: 步骤
+  label_dmsf_workflow_step_plural: 步骤
+  label_dmsf_workflow_approval: 审核
+  label_dmsf_workflow_approval_plural: 审核
+  label_dmsf: 文档管家
+  label_dmsf_wokflow_action_approve: 通过
+  label_dmsf_wokflow_action_reject: 拒绝
   label_dmsf_wokflow_action_delegate: Delegate to
-  label_dmsf_wokflow_action_assign: Assign an approval workflow
-  label_dmsf_wokflow_action_start: Start workflow
+  label_dmsf_wokflow_action_assign: 分配一个工作流
+  label_dmsf_wokflow_action_start: 开始工作流
   label_dmsf_workflow_add_approver: "Add a new approver with a logical function:"
-  label_or: or
-  label_action: Action
-  label_note: Note  
-  title_none: None
-  title_rejection: Rejection
+  label_or: 或
+  label_action: 开始
+  label_note: 注释  
+  title_none: 无
+  title_rejection: 拒绝
   title_delegation: Delegation
-  title_assignment: Assignment
-  title_start: Start  
-  title_dmsf_workflow_log: Approval Workflow Log
-  title_assigned: Assigned
-  title_approval: Approval
-  title_rejected: Rejected
-  dmsf_and: AND
-  dmsf_or: OR
-  dmsf_new_step: New step  
-  message_dmsf_wokflow_note: Your note...
+  title_assignment: 分配
+  title_start: 开始  
+  title_dmsf_workflow_log: 工作流日志
+  title_assigned: 已分配
+  title_approval: 通过
+  title_rejected: 拒绝
+  dmsf_and: 与
+  dmsf_or: 或
+  dmsf_new_step: 新步骤  
+  message_dmsf_wokflow_note: 你的注释...
   info_revision: "r%{rev}"
-  link_workflow: Workflow  
-  notice_workflow_started: Approval workflow successfully started
-  text_email_subject_approved: "Approval workflow %{name} approved"
-  text_email_subject_rejected: "Approval workflow %{name} rejected"
+  link_workflow: 工作流  
+  notice_workflow_started: 工作流成功启动
+  text_email_subject_approved: "工作流 %{name} 通过"
+  text_email_subject_rejected: "工作流 %{name} 被拒绝"
   text_email_subject_delegated: "Approval workflow %{name} delegated"
-  text_email_subject_requires_approval: "Approval workflow %{name} requires your approval"
-  text_email_subject_updated: "Approval workflow %{name} updated"
-  text_email_subject_started: "Approval workflow %{name} started" 
+  text_email_subject_requires_approval: "工作流 %{name} 需要你审核"
+  text_email_subject_updated: "工作流 %{name} 已更新"
+  text_email_subject_started: "工作流 %{name} 已启动" 
   text_email_finished_approved: "The approval workflow '%{name}' assigned to '%{filename}' document has just been finished and the document has been approved."
   text_email_finished_rejected: "The approval workflow '%{name}' assigned to '%{filename}' document has just been finished and the document has been rejected because of '%{notice}'."
   text_email_finished_delegated: "The approval workflow '%{name}' assigned to '%{filename}' document has just been delegated because of '%{notice}' and you are expected to do an approval in the current approval step."
@@ -284,50 +284,50 @@ zh:
   label_my_locked_documents: My locked documents
   
   title_create_link: Create a symbolic link  
-  label_link_from: Link from
-  label_link_to: Link to
-  label_notifications_on: Notifications on
-  label_notifications_off: Notifications off
-  field_target_file: Source file
+  label_link_from: 链接自
+  label_link_to: 链接到
+  label_notifications_on: 通知开启
+  label_notifications_off: 通知关闭
+  field_target_file: 源文件
   title_download_entries: Download entries
-  label_external: External
+  label_external: 外部
   
-  label_link_name: Link name
+  label_link_name: 链接名称
   label_link_external_url: URL
-  label_target_folder: Target folder
-  label_source_folder: Source folder
-  label_target_project: Target project
-  label_source_project: Source project  
+  label_target_folder: 目标文件夹
+  label_source_folder: 源文件夹
+  label_target_project: 目标项目
+  label_source_project: 源项目  
   
-  text_email_doc_updated_subject: "Documents of %{project} updated"
+  text_email_doc_updated_subject: "%{project} 的文档有更新"
   text_email_doc_updated: has just actualized documents of
   text_email_doc_follows: as follows
-  text_email_doc_deleted_subject: "Documents of %{project} deleted"
+  text_email_doc_deleted_subject: "%{project} 的文档被删除"
   text_email_doc_deleted: has just deleted documents of
-  label_links_only: links only
+  label_links_only: 链接
   
   label_display_notified_recipients: Display notified recipients
   note_display_notified_recipients: The user will be informed about all recipients of just sent the email notification.
-  warning_email_notifications: "Email notifications sent to %{to}"
+  warning_email_notifications: "邮件通知发送给 %{to}"
   
-  link_trash_bin: Trash bin
-  title_restore: Restore
-  notice_dmsf_file_restored: The document has been successfully restored
-  notice_dmsf_folder_restored: The folder has been successfully restored
-  notice_dmsf_link_restored: The link has been successfully restored
-  title_restore_checked: Restore checked
-  error_parent_folder: "The parent folder doesn't exist"
+  link_trash_bin: 回收站
+  title_restore: 恢复
+  notice_dmsf_file_restored: 文档成功恢复
+  notice_dmsf_folder_restored: 文件夹成功恢复
+  notice_dmsf_link_restored: 链接成功恢复
+  title_restore_checked: 恢复选中文档
+  error_parent_folder: "上级文件夹不存在"
   
-  error_resource_or_parent_locked: Unable to complete lock - resource (or parent) is locked
-  error_parent_locked: Unable to complete lock - resource parent is locked
-  error_resource_locked: Unable to complete lock - resource is locked
+  error_resource_or_parent_locked: 无法锁定 - 资源 (or 上级资源) 已被锁定
+  error_parent_locked: 无法锁定 - 上级资源已被锁定
+  error_resource_locked: 无法锁定 - 资源已被锁定
   error_lock_exclusively: unable to lock exclusively an already-locked resource  
-  error_unlock_parent_locked: Unlock failed - resource parent is locked  
+  error_unlock_parent_locked: 解锁失败 - 上级资源被锁定  
   
   my:
     blocks:
-      locked_documents: Locked documents
-      open_approvals: Open approvals
+      locked_documents: 已锁定文档
+      open_approvals: 打开审核
                 
   label_maximum_ajax_upload_filesize: Maximum file size uploadable via AJAX
   note_maximum_ajax_upload_filesize: Limits maximum file size that can uploaded via standard AJAX interface otherwise Redmine standard upload form must be used. Number is in MB.
