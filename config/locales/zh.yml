@@ -22,9 +22,9 @@
 
 zh:
   dmsf: 文档管家
-  label_dmsf_file_plural: Documents
-  label_dmsf_file_revision_plural: Document revisions
-  label_dmsf_file_revision_access_plural: Document accesses
+  label_dmsf_file_plural: 文档
+  label_dmsf_file_revision_plural: 文档版本
+  label_dmsf_file_revision_access_plural: 访问文档版本
   warning_no_entries_selected: 未选择任何条目
   error_email_to_must_be_entered: 请输入电子邮件  
   warning_file_already_locked: 文件已经锁定
@@ -41,7 +41,7 @@ zh:
   error_folder_is_not_empty: 非空文件夹
   error_folder_title_is_already_used: 标题已经被使用
   notice_folder_details_were_saved: 文件夹详细信息已保存  
-  error_file_is_locked: Folder is locked
+  error_folder_is_locked: 文件夹被锁定
   error_file_is_locked: 文件被锁定
   notice_file_deleted: 文件已删除
   error_at_least_one_revision_must_be_present: 至少一个修订版本必须存在
@@ -70,7 +70,7 @@ zh:
   link_ver: 版本.
   link_author: 作者
   title_check_for_zip_download_or_email: 选中用于zip下载或邮件发送
-  title_check_for_restore_or_delete: Check for restore or delete
+  title_check_for_restore_or_delete: 选中用户恢复或删除
   title_delete: 删除
   title_notifications_active_deactivate: "通知有效：点击注销通知"
   title_notifications_not_active_activate: "通知无效:点击激活通知"
@@ -128,7 +128,7 @@ zh:
   label_maximum_files_download: 最大下载文件数
   note_maximum_number_of_files_downloaded: 最大文件下载数量(zip或发送电子邮件方式). 0表示无限制.
   label_file_storage_directory: 文件存储目录
-  label_index_database: Index database
+  label_index_database: 索引数据库
   label_stemming_language: Stemming Language
   note_possible_values: Possible values
   note_pass_none_to_disable_stemming: "pass 'none' to disable stemming"
@@ -153,8 +153,8 @@ zh:
   permission_folder_manipulation: 文件夹操作
   permission_file_manipulation: 文件操作  
   permission_force_file_unlock: 强制文件解锁
-  permission_manage_workflows: Manage workflows
-  permission_file_delete: Delete documents
+  permission_manage_workflows: 管理工作流
+  permission_file_delete: 删除文档
   label_file: 文件
   field_folder: 件夹
   error_create_cycle_in_folder_dependency: create cycle in folder dependency
@@ -173,7 +173,7 @@ zh:
   error_file_storage_directory_does_not_exist: 文件存储目录不存在或不能创建
   error_file_can_not_be_created: 文件未能在存储目录中创建
   error_wrong_zip_encoding: 不正确的Zip编码
-  warning_xapian_not_available: Xapian not available
+  warning_xapian_not_available: Xapian不可用
   menu_dmsf: 文档管家
   label_physical_file_delete: 物理删除文件
   user_is_not_project_member: 您不是该项目的成员
@@ -186,20 +186,20 @@ zh:
   project_module_dmsf: 文档管家  
   warning_no_project_to_copy_file_to: No project to copy file to
   comment_copied_from: "Copied from %{source}"
-  notice_file_copied: File copied
-  notice_file_moved: File moved
-  field_target_project: Target project
-  field_target_folder: Target folder
-  title_copy_or_move: Copy/Move
-  label_dmsf_folder_plural: Folders
-  comment_moved_from: "Moved from %{source}"
+  notice_file_copied: 文件已复制
+  notice_file_moved: 文件已移动
+  field_target_project: 目标项目
+  field_target_folder: 目标文件夹
+  title_copy_or_move: 复制/移动
+  label_dmsf_folder_plural: 文件夹
+  comment_moved_from: "移动自 %{source}"
   error_target_folder_same: Target folder and project are the same as current
-  error_file_cannot_be_moved: "File can't be moved"
-  error_file_cannot_be_copied: "File can't be copied"
+  error_file_cannot_be_moved: "文件不能被移动"
+  error_file_cannot_be_copied: "文件不能被复制"
   warning_no_project_to_copy_folder_to: No project to copy folder to
-  title_copy: Copy
-  error_folder_cannot_be_copied: "Folder can't be copied"
-  notice_folder_copied: Folder copied
+  title_copy: 复制
+  error_folder_cannot_be_copied: "文件夹不能被复制"
+  notice_folder_copied: 文件夹已复制
   
   error_max_email_filesize_exceeded: "You've exceeded the maximum filesize for sending via email. (%{number} MB)"
   note_maximum_email_filesize: Limits maximum filesize that can be sent via email. 0 means unlimited. Number is in MB.
